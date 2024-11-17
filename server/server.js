@@ -13,7 +13,7 @@ const EMAIL_TO = process.env.EMAIL_TO;
 
 async function sendEmail() {
   try {
-    // Load the HTML template asynchronously
+    // Load the HTML template asynchronously.
     const emailHtml = await loadHtmlTemplate('ca_ptl.html'); // Update with your template file name
 
     const transporter = nodemailer.createTransport({
